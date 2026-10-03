@@ -46,6 +46,6 @@ O notebook pode ser aberto no Jupyter ou no Google Colab (envie o CSV para a pas
 ## Links
 - Repositório: https://github.com/pedrohenriquesgoncalves-lang/projeto-g1-energia-brasil
 - Página do projeto: https://pedrohenriquesgoncalves-lang.github.io/projeto-g1-energia-brasil/
-- Dashboard: LINK_DO_STREAMLIT
+- Dashboard: [LINK_DO_STREAMLIT](https://energia-brasil-g1.streamlit.app/)
 
 **Autor:** Pedro Henrique
