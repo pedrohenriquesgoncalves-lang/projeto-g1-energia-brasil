@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Consumo de Energia no Brasil — G1</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <h1>Consumo de Energia no Brasil (2015–2024)</h1>
+  <p>Projeto de análise e visualização de dados com Python, Pandas, SQLAlchemy e Streamlit</p>
+</header>
+<main>
+  <section>
+    <h2>Sobre o projeto</h2>
+    <p>Este projeto analisa o consumo de energia elétrica no Brasil por região, estado e setor, considerando evolução temporal, sazonalidade, emissões de CO₂, eficiência energética e relações estatísticas entre as variáveis.</p>
+    <p>A base é uma simulação com 4.440 registros mensais, de janeiro de 2015 a dezembro de 2024. O fluxo inclui preparação dos dados, análise exploratória, indicadores, dashboard interativo e publicação online.</p>
+  </section>
+
+  <section>
+    <h2>Perguntas de negócio</h2>
+    <ul>
+      <li>Qual é o consumo total e como ele se distribui entre setores e regiões?</li>
+      <li>Quais estados concentram maior consumo?</li>
+      <li>Como o consumo evolui ao longo dos anos e dos meses?</li>
+      <li>O consumo se relaciona com temperatura, tarifa, população e emissões?</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Indicadores analisados</h2>
+    <div class="grid">
+      <div class="kpi"><strong>Consumo total</strong><span>≈ 165,7 milhões de MWh no período.</span></div>
+      <div class="kpi"><strong>Consumo médio</strong><span>≈ 37,3 mil MWh por registro.</span></div>
+      <div class="kpi"><strong>Emissão de CO₂</strong><span>Soma das emissões registradas.</span></div>
+      <div class="kpi"><strong>Eficiência média</strong><span>Índice médio de ≈ 69,8 pontos.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Principais resultados</h2>
+    <figure class="figura"><img src="imagens/consumo_setor.png" alt="Consumo total por setor"><figcaption>Os cinco setores têm consumo próximo; o Público lidera e o Residencial é o menor (≈ 10% de diferença).</figcaption></figure>
+    <figure class="figura"><img src="imagens/consumo_regiao.png" alt="Consumo por região"><figcaption>O Sudeste concentra ≈ 36% do consumo por ter mais registros; a média por registro é semelhante entre regiões.</figcaption></figure>
+    <figure class="figura"><img src="imagens/serie_temporal.png" alt="Evolução do consumo"><figcaption>Consumo estável, com queda de ≈ 9,5% em 2020 e pico em 2022.</figcaption></figure>
+    <figure class="figura"><img src="imagens/correlacao.png" alt="Matriz de correlação"><figcaption>Correlações próximas de zero: não há relação linear relevante entre o consumo e as demais variáveis.</figcaption></figure>
+  </section>
+
+  <section>
+    <h2>Tecnologias utilizadas</h2>
+    <div class="tags">
+      <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+      <span>Streamlit</span><span>SQLAlchemy</span><span>SQLite</span><span>GitHub Pages</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Funcionalidades</h2>
+    <p><strong>Intermediárias:</strong> filtros múltiplos, KPIs dinâmicos, análise temporal, dashboard em seções e visualizações comparativas.</p>
+    <p><strong>Avançadas:</strong> persistência em banco (SQLAlchemy + SQLite), correlação estatística e séries temporais avançadas.</p>
+  </section>
+
+  <section>
+    <h2>Arquivos do projeto</h2>
+    <div class="btns">
+      <a class="btn" href="https://github.com/pedrohenriquesgoncalves-lang/projeto-g1-energia-brasil" target="_blank" rel="noopener">Repositório GitHub</a>
+      <a class="btn" href="https://github.com/pedrohenriquesgoncalves-lang/projeto-g1-energia-brasil/blob/main/README.md" target="_blank" rel="noopener">Ver README</a>
+      <a class="btn" href="https://github.com/pedrohenriquesgoncalves-lang/projeto-g1-energia-brasil/blob/main/notebooks/analise_consumo_energia.ipynb" target="_blank" rel="noopener">Ver Notebook</a>
+      <a class="btn" href="dados/simulacao_consumo_energia_brasil.csv" download>Baixar Base de Dados</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Dashboard interativo</h2>
+    <p>Desenvolvido com Streamlit, permite filtrar por região, setor, nível de demanda e período, com KPIs, gráficos, tabelas e conclusão executiva.</p>
+    <div class="btns">
+      <a class="btn alt" href="LINK_DO_STREAMLIT" target="_blank" rel="noopener">Acessar Dashboard Streamlit</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Conclusão</h2>
+    <p>O consumo é equilibrado entre os setores, com o Sudeste liderando por volume de registros. A série anual mostra queda em 2020 e recuperação nos anos seguintes. Como a base é simulada, não há correlação linear relevante entre as variáveis; o projeto demonstra a metodologia completa, que pode ser aplicada a dados reais.</p>
+  </section>
+</main>
+<footer>Projeto desenvolvido por Pedro Henrique — Avaliação G1 — Análise e Visualização de Dados com Python</footer>
+</body>
+</html>
