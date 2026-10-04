@@ -40,6 +40,7 @@ def numero(valor, casas=0):
 df = carregar()
 
 st.title("⚡ Consumo de Energia no Brasil (2015–2024)")
+st.caption("Autor: Pedro Henrique dos Santos Gonçalves | Disciplina: Linguagens de Programação | Professor: Alexandre Neves Louzada")
 st.markdown(
     "**Problema:** como o consumo de energia elétrica se distribui entre regiões, estados e setores, "
     "e como ele evolui ao longo do tempo? Este painel permite filtrar a base e acompanhar consumo, "
